@@ -1,3 +1,4 @@
+#!/usr/bin/python3.4
 import sys
 import re
 from collections import Counter  
@@ -25,4 +26,4 @@ if __name__ == '__main__':
         exit(1)
 
     for i in get_most_frequent_words(text):
-        print("Слово:", i[0], "Количество:", i[1])вама
+        print("Слово:", i[0], "Количество:", i[1])
