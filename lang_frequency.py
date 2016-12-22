@@ -11,9 +11,9 @@ def load_data(filepath):
 
 
 def get_most_frequent_words(text):
-    regexp = "[^\s\d.,-:'\"`;)(?!&]+"
-    words_list = re.findall(regexp, text)
     required_words_number = 10
+    regexp = "[^\s\d.,-:'\"`;)(?!&]+"
+    words_list = re.findall(regexp, text.lower())
     return Counter(words_list).most_common(required_words_number)
 
 
@@ -25,4 +25,4 @@ if __name__ == '__main__':
         exit(1)
 
     for i in get_most_frequent_words(text):
-        print("Слово:", i[0], "Количество:", i[1])
+        print("Слово:", i[0], "Количество:", i[1])вама
